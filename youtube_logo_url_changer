@@ -1,0 +1,11 @@
+// ==UserScript==
+// @name         Youtube Logo URL Changer
+// @namespace    http://robertmeta.com
+// @version      0.1
+// @description  Basically, makes it so if you click the youtube logo in the upperleft take you to subscriptions
+// @author       You
+// @match        http*://www.youtube.com/*
+// @grant        none
+// ==/UserScript==
+
+document.querySelector("#logo-container").href = "https://www.youtube.com/feed/subscriptions";
