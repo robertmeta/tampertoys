@@ -4,7 +4,8 @@
 // @version      0.1
 // @description  When you are linked to a comment, sometimes you want to see all the other comments by that person, this does that and nothing else
 // @author       Robert Melton
-// @match        http*://www.reddit.com/r/*/comments/*
+// @include      http*://www.reddit.com/r/*/comments/*/*/*
+// @exclude      http*://www.reddit.com/r/*/comments/*/*/
 // @grant        none
 // ==/UserScript==
 var commentSection = document.getElementsByClassName('sitetable nestedlisting');
